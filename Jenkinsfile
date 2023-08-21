@@ -13,8 +13,8 @@ pipeline{
                 // Get the source code from the git repo
                 checkout scm
                 //run mvn wrapper commands
-                sh "./mvnw clean complie"
-                echo 'Building the Project with Maven Complie'
+                sh "./mvnw clean compile"
+                echo 'Building the Project with Maven Compile'
             }
         }
         stage('Test'){
