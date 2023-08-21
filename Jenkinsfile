@@ -9,8 +9,9 @@ pipeline{
     stages{
         stage('Build'){
             steps{
-                //get source codefrom rep
-                git 'https://github.com/Siddharth0337/estore_backend.git'
+                
+                // Get the source code from the git repo
+                checkout scm
                 //run mvn wrapper commands
                 sh "./mvnw clean complie"
                 echo 'Building the Project with Maven Complie'
