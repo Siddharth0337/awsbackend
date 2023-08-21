@@ -1,5 +1,11 @@
 pipeline{
     agent any
+    tools {
+        // Specify the name of the Git installation configured in Jenkins
+        git 'MyGitInstallation'
+   
+    }
+
     stages{
         stage('Build'){
             steps{
